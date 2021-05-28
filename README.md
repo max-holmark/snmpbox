@@ -27,4 +27,10 @@ snmpbox simulator
 snmpbox simulator --help
 ```
 
+## Examples
+```
+snmpbox scanner --agent-udpv4-endpoint=10.1.1.10 --protocol-version=1 --output-file=device10
+snmpbox simulator --agent-udpv4-endpoint=localhost
+```
+
 The link to the base library: https://github.com/inexio/snmpsim
