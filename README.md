@@ -4,7 +4,7 @@
 - Run the following commands:
 ```
 docker build . -t snmpbox
-alias snmpbox='docker run --rm -it -v $(pwd):/app snmpbox'
+alias snmpbox='docker run --rm -p 161:161 -it -v $(pwd):/app snmpbox'
 ```
 
 ## How to use
