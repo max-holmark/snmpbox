@@ -1,9 +1,10 @@
 # SNMP BOX (Docker wrapper)
 
 ## How to start
-- Run the following command:
+- Run the following commands:
 ```
-sh ./install.sh
+docker build . -t snmpbox
+alias snmpbox='docker run --rm -it -v $(pwd):/app snmpbox'
 ```
 
 ## How to use
@@ -26,4 +27,4 @@ snmpbox simulator
 snmpbox simulator --help
 ```
 
-The link to base library: https://github.com/inexio/snmpsim
+The link to the base library: https://github.com/inexio/snmpsim
